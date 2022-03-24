@@ -1,3 +1,9 @@
+@charset "utf-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
 .hidden {
   display:none;
 }
@@ -6,4 +12,51 @@ img {
   position:fixed; left:0; top:0;
   width:100%; height:100%;
   z-index:-1;
+}
+
+
+.cal {
+  width:350px;
+  margin:0 auto;
+  padding:0 10px;
+  font-family: 'Poppins', sans-serif;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 20px;
+}
+.cal .cal_nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 78px;
+}
+.cal_nav .year-month{
+  width:300px;
+  text-align: center;
+}
+.cal .cal_nav .prev, .cal .cal_nav .next {
+  font-size:50px;
+}
+.cal .cal_wrap {
+  position:relative;
+  margin: 0 auto;
+  padding-top:30px;
+}
+.cal .cal_wrap .days {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  border-bottom:  1px solid rgb(105, 105, 105);  
+  color:rgb(105, 105, 105);
+  font-size:15px;
+  text-align: center;
+}
+.cal .cal_wrap .day{ width: calc(100% / 7); }
+.cal .cal_wrap .dates {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  height:290px;
 }
