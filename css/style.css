@@ -14,11 +14,10 @@ img {
   z-index:-1;
 }
 
-
 .cal {
   width:350px;
   margin:0 auto;
-  padding:0 10px;
+  padding:20px;
   font-family: 'Poppins', sans-serif;
   background-color: rgba(255, 255, 255, 0.7);
   border-radius: 20px;
@@ -29,34 +28,52 @@ img {
   align-items: center;
   font-weight: 700;
   font-size: 48px;
-  line-height: 78px;
+  line-height: 60px;
 }
-.cal_nav .year-month{
+.cal_nav .year_month{
   width:300px;
+  margin-top: 10px;
   text-align: center;
+  color:rgb(29, 29, 29);
 }
 .cal .cal_nav .prev, .cal .cal_nav .next {
-  font-size:50px;
+  font-size:35px;
+  color:rgb(182, 83, 83);
 }
 .cal .cal_wrap {
   position:relative;
   margin: 0 auto;
-  padding-top:30px;
+  padding-top:20px;
 }
 .cal .cal_wrap .days {
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
-  border-bottom:  1px solid rgb(105, 105, 105);  
+  height:30px;
+  border-bottom:  1px solid rgb(133, 133, 133);  
   color:rgb(105, 105, 105);
   font-size:15px;
   text-align: center;
 }
 .cal .cal_wrap .day{ width: calc(100% / 7); }
+
 .cal .cal_wrap .dates {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   flex-wrap: wrap;
-  height:290px;
+  align-items: center;
+  height:270px;
+  text-align: center;
+}
+.dates .current { height:45px; line-height:45px;}
+
+
+.cal .cal_wrap .day:nth-child(7n -1) {
+  color: #3c6ffa;
+}
+
+.cal .cal_wrap .day:nth-child(7n) {
+  color: #ed2a61;
+}
+
+.cal .cal_wrap .day.disable {
+  color: rgb(146, 146, 146);
 }
