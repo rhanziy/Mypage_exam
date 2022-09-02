@@ -1,4 +1,4 @@
-<!--
+/*
 const month = document.querySelector(".year_month");
 const dates = document.querySelector(".dates");
 const prev = document.querySelector(".nav-btn.prev");
@@ -55,4 +55,4 @@ function renderCalender(thisMonth){
 
 calenderInit();
 
--->
+*/
